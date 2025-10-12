@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/mehmet/c++/StickmanPhysics/build",
+  "command": "/usr/lib/ccache/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED -I/home/mehmet/c++/StickmanPhysics/include -isystem /home/mehmet/c++/vcpkg/installed/x64-linux/include -std=gnu++17 -o CMakeFiles/stickman.dir/src/main.cpp.o -c /home/mehmet/c++/StickmanPhysics/src/main.cpp",
+  "file": "/home/mehmet/c++/StickmanPhysics/src/main.cpp",
+  "output": "CMakeFiles/stickman.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/mehmet/c++/StickmanPhysics/build",
+  "command": "/usr/lib/ccache/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED -I/home/mehmet/c++/StickmanPhysics/include -isystem /home/mehmet/c++/vcpkg/installed/x64-linux/include -std=gnu++17 -o CMakeFiles/stickman.dir/src/stickman.cpp.o -c /home/mehmet/c++/StickmanPhysics/src/stickman.cpp",
+  "file": "/home/mehmet/c++/StickmanPhysics/src/stickman.cpp",
+  "output": "CMakeFiles/stickman.dir/src/stickman.cpp.o"
+}
+]

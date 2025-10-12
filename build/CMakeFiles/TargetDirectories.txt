@@ -1,0 +1,3 @@
+/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/stickman.dir
+/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/edit_cache.dir
+/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/rebuild_cache.dir

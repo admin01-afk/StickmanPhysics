@@ -1,0 +1,21 @@
+{
+  "limbs": [
+    {
+      "name": "limb0",
+      "x": 0.0,
+      "y": 0,
+      "width": 0.2,
+      "height": 0.75,
+      "shape": "box"
+    },
+    {
+      "name": "limb1",
+      "x": 0,
+      "y": 0,
+      "radius": 0.25,
+      "shape": "circle",
+      "parent": "limb0",
+      "anchor": {"x": 0, "y": -0.375} 
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+/usr/lib/ccache/c++ CMakeFiles/stickman.dir/src/main.cpp.o CMakeFiles/stickman.dir/src/stickman.cpp.o -o stickman  -Wl,-rpath,/usr/local/lib /usr/local/lib/libraylib.so.5.5.0 -lbox2d -lm /home/mehmet/c++/vcpkg/installed/x64-linux/debug/lib/libjsoncpp.a
