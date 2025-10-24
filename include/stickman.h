@@ -18,17 +18,19 @@ struct Bone {
 
 class Stickman {
 public:
-    Stickman(b2World* world, float x, float y, float scale = 1.0f);
+    Stickman(b2World* world, float x, float y);
     void BuildStickman();
-    void Draw(float scale);
     b2Body* createLimb(const Bone& bone);
-    void generateLimbs(Bone& bone);
-private:
-    // Member variables
+    void generateLimbs(const Bone& bone, const Vector2& parentPos);
+    Bone parseBone(const Json::Value& node);
+    Bone loadStickmanFromFile(const std::string& path);
+
+    private:
     b2World* world;
     float x, y, scale;
-
-    // Bodies and joints
+    Vector2 (*b2Pos2screen)(Vector2);
+    
     std::vector<b2Body*> bodies;
     std::vector<b2Joint*> joints;
+    std::vector<Bone> bones;
 };
