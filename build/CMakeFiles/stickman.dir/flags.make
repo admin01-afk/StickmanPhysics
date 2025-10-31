@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib/ccache/c++
 CXX_DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -DUSE_LIBTYPE_SHARED
 
-CXX_INCLUDES = -I/home/mehmet/c++/StickmanPhysics/include -isystem /home/mehmet/c++/vcpkg/installed/x64-linux/include
+CXX_INCLUDES = -I/home/mehmet/c++/StickmanPhysics/include
 
 CXX_FLAGS = -std=gnu++17
 

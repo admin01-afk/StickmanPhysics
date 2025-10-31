@@ -153,30 +153,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stickman.dir/build.make CMakeFiles/stickman.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/stickman.o: src/stickman.cpp.o
-.PHONY : src/stickman.o
-
-# target to build an object file
-src/stickman.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stickman.dir/build.make CMakeFiles/stickman.dir/src/stickman.cpp.o
-.PHONY : src/stickman.cpp.o
-
-src/stickman.i: src/stickman.cpp.i
-.PHONY : src/stickman.i
-
-# target to preprocess a source file
-src/stickman.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stickman.dir/build.make CMakeFiles/stickman.dir/src/stickman.cpp.i
-.PHONY : src/stickman.cpp.i
-
-src/stickman.s: src/stickman.cpp.s
-.PHONY : src/stickman.s
-
-# target to generate assembly for a file
-src/stickman.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stickman.dir/build.make CMakeFiles/stickman.dir/src/stickman.cpp.s
-.PHONY : src/stickman.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +165,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/stickman.o"
-	@echo "... src/stickman.i"
-	@echo "... src/stickman.s"
 .PHONY : help
 
 

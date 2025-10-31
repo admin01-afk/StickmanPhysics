@@ -1,1 +1,1 @@
-# Raylib & Box2d
+# Raylib & Box2D (v2.4.x)
