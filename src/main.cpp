@@ -171,17 +171,24 @@ public:
         }
     }
 };
-
 struct Ragdoll
 {
     std::vector<b2Body *> limbs;
+};
+
+enum CollisionCategory {
+    CATEGORY_TORSO  = 0x0001,
+    CATEGORY_FRONT  = 0x0002,
+    CATEGORY_BACK   = 0x0004,
+    CATEGORY_GROUND = 0x0008
 };
 
 Ragdoll CreateStickman(b2World *world, b2Vec2 pos, float scale)
 {
     Ragdoll ragdoll;
 
-    auto makeLimb = [&](b2Vec2 offset, float hx, float hy, bool dynamic = true)
+    auto makeBox = [&](b2Vec2 offset, float hx, float hy, bool dynamic = true,
+                       uint16 category = CATEGORY_FRONT, uint16 mask = 0xFFFF)
     {
         b2BodyDef bd;
         bd.type = dynamic ? b2_dynamicBody : b2_staticBody;
@@ -190,36 +197,18 @@ Ragdoll CreateStickman(b2World *world, b2Vec2 pos, float scale)
 
         b2PolygonShape shape;
         shape.SetAsBox(hx, hy);
-        body->CreateFixture(&shape, 1.0f);
+
+        b2FixtureDef fd;
+        fd.shape = &shape;
+        fd.density = 1.0f;
+        fd.filter.categoryBits = category;
+        fd.filter.maskBits = mask;
+        body->CreateFixture(&fd);
+
         ragdoll.limbs.push_back(body);
         return body;
     };
 
-    // Create torso
-    b2Body *torso = makeLimb({0, 1.0f}, 0.15f, 0.4f);
-    // Create head
-    b2BodyDef hd;
-    hd.type = b2_dynamicBody;
-    hd.position = pos + b2Vec2(0, 1.9f);
-    b2Body *head = world->CreateBody(&hd);
-    b2CircleShape hshape;
-    hshape.m_radius = 0.2f;
-    head->CreateFixture(&hshape, 1.0f);
-    ragdoll.limbs.push_back(head);
-
-    // Connect head to torso
-    b2RevoluteJointDef j;
-    j.bodyA = torso;
-    j.bodyB = head;
-    j.localAnchorA.Set(0, 0.4f);
-    j.localAnchorB.Set(0, -0.2f);
-    world->CreateJoint(&j);
-
-    // Add legs
-    b2Body *leftLeg = makeLimb({-0.1f, 0.2f}, 0.08f, 0.4f);
-    b2Body *rightLeg = makeLimb({0.1f, 0.2f}, 0.08f, 0.4f);
-
-    // Connect legs
     auto connect = [&](b2Body *a, b2Body *b, b2Vec2 anchorA, b2Vec2 anchorB)
     {
         b2RevoluteJointDef jd;
@@ -230,16 +219,62 @@ Ragdoll CreateStickman(b2World *world, b2Vec2 pos, float scale)
         world->CreateJoint(&jd);
     };
 
-    // add arms
-    b2Body *leftArm = makeLimb({-0.35f, 1.0f}, 0.08f, 0.3f);
-    b2Body *rightArm = makeLimb({0.35f, 1.0f}, 0.08f, 0.3f);
+    // --- Torso ---
+    b2BodyDef torsoDef;
+    torsoDef.type = b2_dynamicBody;
+    torsoDef.position = pos + b2Vec2(0, 1.0f);
+    b2Body *torso = world->CreateBody(&torsoDef);
 
-    // Connect arms
-    connect(torso, leftArm, {-0.15f, 0.3f}, {0, 0.3f});
-    connect(torso, rightArm, {0.15f, 0.3f}, {0, 0.3f});
+    b2PolygonShape torsoShape;
+    torsoShape.SetAsBox(0.15f, 0.4f);
+    b2FixtureDef torsoFD;
+    torsoFD.shape = &torsoShape;
+    torsoFD.density = 1.0f;
+    torsoFD.filter.categoryBits = 0x0002;   // torso category
+    torsoFD.filter.maskBits     = 0x0002;   // collides only with itself
+    torso->CreateFixture(&torsoFD);
 
-    connect(torso, leftLeg, {-0.1f, -0.4f}, {0, 0.4f});
-    connect(torso, rightLeg, {0.1f, -0.4f}, {0, 0.4f});
+    // --- Head ---
+    b2BodyDef hd;
+    hd.type = b2_dynamicBody;
+    hd.position = pos + b2Vec2(0, 1.9f);
+    b2Body *head = world->CreateBody(&hd);
+
+    b2CircleShape hshape;
+    hshape.m_radius = 0.2f;
+    b2FixtureDef headfd;
+    headfd.shape = &hshape;
+    headfd.density = 1.0f;
+    headfd.filter.categoryBits = 0x0004;                 // head category
+    headfd.filter.maskBits     = 0x0004 | CATEGORY_GROUND; // collide with ground
+    head->CreateFixture(&headfd);
+    ragdoll.limbs.push_back(head);
+
+    connect(torso, head, {0, 0.4f}, {0, -0.2f});
+
+    // --- Legs ---
+    b2Vec2 legAnchor = {0, -0.4f};
+
+    b2Body *leftUpperLeg  = makeBox(legAnchor, 0.08f, 0.25f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *leftLowerLeg  = makeBox({legAnchor.x, legAnchor.y - 0.4f}, 0.08f, 0.25f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *rightUpperLeg = makeBox(legAnchor, 0.08f, 0.25f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
+    b2Body *rightLowerLeg = makeBox({legAnchor.x, legAnchor.y - 0.4f}, 0.08f, 0.25f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
+
+    connect(torso, leftUpperLeg, legAnchor, {0, 0.25f});
+    connect(torso, rightUpperLeg, legAnchor, {0, 0.25f});
+    connect(leftUpperLeg, leftLowerLeg, {0, -0.25f}, {0, 0.25f});
+    connect(rightUpperLeg, rightLowerLeg, {0, -0.25f}, {0, 0.25f});
+
+    // --- Arms ---
+    b2Body *leftUpperArm  = makeBox({-0.35f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *leftLowerArm  = makeBox({-0.55f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *rightUpperArm = makeBox({0.35f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
+    b2Body *rightLowerArm = makeBox({0.55f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
+
+    connect(torso, leftUpperArm, {-0.15f, 0.3f}, {0, 0.2f});
+    connect(torso, rightUpperArm, {0.15f, 0.3f}, {0, 0.2f});
+    connect(leftUpperArm, leftLowerArm, {0, -0.2f}, {0, 0.2f});
+    connect(rightUpperArm, rightLowerArm, {0, -0.2f}, {0, 0.2f});
 
     return ragdoll;
 }
@@ -252,12 +287,11 @@ int main()
 {
     InitWindow(WIDTH, HEIGHT, "Stickman Ragdoll");
     SetTargetFPS(60);
-    camera.target = { WIDTH / 2.0f, HEIGHT / 2.0f };
-    camera.offset = { 0, 0 };
+    camera.offset = { WIDTH / 2.0f, HEIGHT / 2.0f };
     camera.rotation = 0.0f;
     camera.zoom = 1.0f;
 
-    Vector2 target = { 0, 0 };
+    Vector2 target = { WIDTH / 2.0f, HEIGHT / 2.0f };
 
     Renderer renderer(SCALE);
 
@@ -267,26 +301,42 @@ int main()
     ground = world.CreateBody(&grounddef);
     b2PolygonShape boxshape;
     boxshape.SetAsBox((WIDTH / SCALE / 2.0f)+10, 0.5f);
-    ground->CreateFixture(&boxshape, 1.0f);
+    b2FixtureDef groundFD;
+    groundFD.shape = &boxshape;
+    groundFD.density = 1.0f;
+    groundFD.filter.categoryBits = CATEGORY_GROUND;
+    groundFD.filter.maskBits = CATEGORY_BACK | CATEGORY_FRONT;
+    ground->CreateFixture(&groundFD);
 
     Ragdoll stickman = CreateStickman(&world, {WIDTH / SCALE / 2, -HEIGHT / SCALE / 2}, SCALE);
 
+    bool physicsPaused = false;
     while (!WindowShouldClose())
     {
-
         if (IsKeyDown(KEY_D)) target.x += 200 * GetFrameTime();
         if (IsKeyDown(KEY_A)) target.x -= 200 * GetFrameTime();
         if (IsKeyDown(KEY_S)) target.y += 200 * GetFrameTime();
         if (IsKeyDown(KEY_W)) target.y -= 200 * GetFrameTime();
 
+        //zoom
+        float zoomSpeed = 1.0f; // zoom units per second
+        float dt = GetFrameTime();
+
+        if (IsKeyDown(KEY_Q)) camera.zoom += zoomSpeed * dt * camera.zoom;
+        if (IsKeyDown(KEY_E)) camera.zoom -= zoomSpeed * dt * camera.zoom;
+        if (camera.zoom > 5.0f) camera.zoom = 5.0f; // max zoom in
+        if (camera.zoom < 0.1f) camera.zoom = 0.1f; // max zoom out
+
+
         camera.target = target;
-        dPrint("Camera target: (%.2f, %.2f)\n", camera.target.x, camera.target.y);
 
         mousePos = GetMousePosition();
         if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) OnMouseDown();
         if (IsMouseButtonDown(MOUSE_LEFT_BUTTON)) OnMouseMove();
         if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) OnMouseUp();
-        world.Step(1.0f / 60.0f, 8, 3);
+
+        if (IsKeyPressed(KEY_P)) physicsPaused = !physicsPaused; // toggle pause
+        if (!physicsPaused) world.Step(1.0f / 60.0f, 8, 3);
         BeginDrawing();
         BeginMode2D(camera);
             ClearBackground(BLACK);
