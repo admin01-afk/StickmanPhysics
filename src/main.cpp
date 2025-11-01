@@ -3,12 +3,7 @@
 #include <iostream>
 #include <vector>
 
-#define DEBUG 1
-#if DEBUG
-#define dPrint(fmt, ...) printf("[DEBUG] " fmt, ##__VA_ARGS__)
-#else
-#define dPrint(...) ((void)0)
-#endif
+bool DEBUG = true;
 
 const int WIDTH = 1200;
 const int HEIGHT = 900;
@@ -20,17 +15,27 @@ b2Vec2 mouseWorld;
 b2Vec2 gravity(0.0f, -10.0f); // -10
 b2World world(gravity);
 b2World *worldPtr = &world;
-Camera2D camera = { 0 };
+Camera2D camera = {0};
 
 void OnMouseDown();
 void OnMouseMove();
 void OnMouseUp();
 
+void dPrint(const char *fmt, ...){
+    if (DEBUG) {
+        printf("[DEBUG] ");
+        va_list args;
+        va_start(args, fmt);
+        vprintf(fmt, args);
+        va_end(args);
+    }
+}
+
 #pragma region CoordinateConversions
 Vector2 screen2world(Vector2 screenPos)
 {
     Vector2 world = GetScreenToWorld2D(screenPos, camera);
-    return { world.x / SCALE, -world.y / SCALE };
+    return {world.x / SCALE, -world.y / SCALE};
 }
 
 b2Vec2 screen2worldb2(Vector2 screenPos)
@@ -47,10 +52,8 @@ Vector2 world2screen(b2Vec2 worldPos)
 
 void MousePosDebug()
 {
-#if !DEBUG
-    return;
-#endif
-
+    if(!DEBUG) return;
+    
     // Get current mouse in both screen and world coords
     Vector2 mousePos = GetMousePosition();
     Vector2 worldPos = screen2world(mousePos);
@@ -85,7 +88,7 @@ void MousePosDebug()
         y = padding;
 
     // Draw a background for readability
-    DrawRectangleRounded((Rectangle){x - padding/2, y - padding/2, textWidth + padding, textHeight + padding/2}, 0.2f, 4, Fade(BLACK, 0.4f));
+    DrawRectangleRounded((Rectangle){x - padding / 2, y - padding / 2, textWidth + padding, textHeight + padding / 2}, 0.2f, 4, Fade(BLACK, 0.4f));
 
     // Draw both lines
     DrawText(screenText, x, y, fontSize, ORANGE);
@@ -114,59 +117,61 @@ public:
 
                 switch (type)
                 {
-                    case b2Shape::e_circle:
-                    {
-                        const b2CircleShape *circle = static_cast<const b2CircleShape *>(shape);
-                        b2Vec2 center = body->GetWorldPoint(circle->m_p);
-                        Vector2 screenCenter = world2screen(center);
-                        float radius = circle->m_radius * scale;
-                        #if DEBUG
-                            DrawCircleLinesV(screenCenter, radius, bodyColor);
-                        #else
-                            DrawCircleV(screenCenter, radius, bodyColor);
-                        #endif
-                        break;
+                case b2Shape::e_circle:
+                {
+                    const b2CircleShape *circle = static_cast<const b2CircleShape *>(shape);
+                    b2Vec2 center = body->GetWorldPoint(circle->m_p);
+                    Vector2 screenCenter = world2screen(center);
+                    float radius = circle->m_radius * scale;
+                    if (DEBUG) {
+                        DrawCircleLinesV(screenCenter, radius, bodyColor);
+                    } else {
+                        DrawCircleV(screenCenter, radius, bodyColor);
                     }
+                    break;
+                }
 
-                    case b2Shape::e_polygon:
+                case b2Shape::e_polygon:
+                {
+                    const b2PolygonShape *poly = static_cast<const b2PolygonShape *>(shape);
+                    int vertexCount = poly->m_count;
+
+                    if (vertexCount >= 3)
                     {
-                        const b2PolygonShape *poly = static_cast<const b2PolygonShape *>(shape);
-                        int vertexCount = poly->m_count;
-
-                        if (vertexCount >= 3)
-                        {
-                            std::vector<Vector2> points(vertexCount);
+                        std::vector<Vector2> points(vertexCount);
+                        for (int i = 0; i < vertexCount; ++i)
+                            points[i] = world2screen(body->GetWorldPoint(poly->m_vertices[i]));
+                        if (DEBUG) {
                             for (int i = 0; i < vertexCount; ++i)
-                                points[i] = world2screen(body->GetWorldPoint(poly->m_vertices[i]));
-                                #if DEBUG
-                                    for (int i = 0; i < vertexCount; ++i)
-                                        DrawLineV(points[i], points[(i + 1) % vertexCount], bodyColor);
-                                #else
-                                    for (int i = 1; i < vertexCount - 1; ++i)
-                                        DrawTriangle(points[0], points[i], points[i + 1], bodyColor);
-                                #endif
+                                DrawLineV(points[i], points[(i + 1) % vertexCount], bodyColor);
+                        } else {
+
+                            for (int i = 1; i < vertexCount - 1; ++i)
+                            DrawTriangle(points[0], points[i], points[i + 1], bodyColor);
                         }
-                        break;
                     }
+                    break;
+                }
 
-                    case b2Shape::e_edge:
-                    {
-                        const b2EdgeShape *edge = static_cast<const b2EdgeShape *>(shape);
-                        Vector2 p1 = world2screen(body->GetWorldPoint(edge->m_vertex1));
-                        Vector2 p2 = world2screen(body->GetWorldPoint(edge->m_vertex2));
-                        DrawLineV(p1, p2, BLUE);
-                        break;
-                    }
+                case b2Shape::e_edge:
+                {
+                    const b2EdgeShape *edge = static_cast<const b2EdgeShape *>(shape);
+                    Vector2 p1 = world2screen(body->GetWorldPoint(edge->m_vertex1));
+                    Vector2 p2 = world2screen(body->GetWorldPoint(edge->m_vertex2));
+                    DrawLineV(p1, p2, BLUE);
+                    break;
+                }
 
-                    default:
-                        break;
-                    }
+                default:
+                    break;
+                }
 
-                    if (mouseJoint) {
-                        b2Vec2 p1 = mouseJoint->GetAnchorA();
-                        b2Vec2 p2 = mouseJoint->GetAnchorB();
-                        DrawLineV(world2screen(p1), world2screen(p2), RED);
-                    }
+                if (mouseJoint)
+                {
+                    b2Vec2 p1 = mouseJoint->GetAnchorA();
+                    b2Vec2 p2 = mouseJoint->GetAnchorB();
+                    DrawLineV(world2screen(p1), world2screen(p2), RED);
+                }
             }
         }
     }
@@ -176,10 +181,11 @@ struct Ragdoll
     std::vector<b2Body *> limbs;
 };
 
-enum CollisionCategory {
-    CATEGORY_TORSO  = 0x0001,
-    CATEGORY_FRONT  = 0x0002,
-    CATEGORY_BACK   = 0x0004,
+enum CollisionCategory
+{
+    CATEGORY_TORSO = 0x0001,
+    CATEGORY_FRONT = 0x0002,
+    CATEGORY_BACK = 0x0004,
     CATEGORY_GROUND = 0x0008
 };
 
@@ -230,8 +236,8 @@ Ragdoll CreateStickman(b2World *world, b2Vec2 pos, float scale)
     b2FixtureDef torsoFD;
     torsoFD.shape = &torsoShape;
     torsoFD.density = 1.0f;
-    torsoFD.filter.categoryBits = 0x0002;   // torso category
-    torsoFD.filter.maskBits     = 0x0002;   // collides only with itself
+    torsoFD.filter.categoryBits = 0x0002; // torso category
+    torsoFD.filter.maskBits = 0x0002;     // collides only with itself
     torso->CreateFixture(&torsoFD);
 
     // --- Head ---
@@ -245,8 +251,8 @@ Ragdoll CreateStickman(b2World *world, b2Vec2 pos, float scale)
     b2FixtureDef headfd;
     headfd.shape = &hshape;
     headfd.density = 1.0f;
-    headfd.filter.categoryBits = 0x0004;                 // head category
-    headfd.filter.maskBits     = 0x0004 | CATEGORY_GROUND; // collide with ground
+    headfd.filter.categoryBits = 0x0004;               // head category
+    headfd.filter.maskBits = 0x0004 | CATEGORY_GROUND; // collide with ground
     head->CreateFixture(&headfd);
     ragdoll.limbs.push_back(head);
 
@@ -255,8 +261,8 @@ Ragdoll CreateStickman(b2World *world, b2Vec2 pos, float scale)
     // --- Legs ---
     b2Vec2 legAnchor = {0, -0.4f};
 
-    b2Body *leftUpperLeg  = makeBox(legAnchor, 0.08f, 0.25f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
-    b2Body *leftLowerLeg  = makeBox({legAnchor.x, legAnchor.y - 0.4f}, 0.08f, 0.25f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *leftUpperLeg = makeBox(legAnchor, 0.08f, 0.25f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *leftLowerLeg = makeBox({legAnchor.x, legAnchor.y - 0.4f}, 0.08f, 0.25f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
     b2Body *rightUpperLeg = makeBox(legAnchor, 0.08f, 0.25f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
     b2Body *rightLowerLeg = makeBox({legAnchor.x, legAnchor.y - 0.4f}, 0.08f, 0.25f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
 
@@ -266,8 +272,8 @@ Ragdoll CreateStickman(b2World *world, b2Vec2 pos, float scale)
     connect(rightUpperLeg, rightLowerLeg, {0, -0.25f}, {0, 0.25f});
 
     // --- Arms ---
-    b2Body *leftUpperArm  = makeBox({-0.35f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
-    b2Body *leftLowerArm  = makeBox({-0.55f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *leftUpperArm = makeBox({-0.35f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
+    b2Body *leftLowerArm = makeBox({-0.55f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_BACK, CATEGORY_BACK | CATEGORY_GROUND);
     b2Body *rightUpperArm = makeBox({0.35f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
     b2Body *rightLowerArm = makeBox({0.55f, 1.0f}, 0.08f, 0.2f, true, CATEGORY_FRONT, CATEGORY_FRONT | CATEGORY_GROUND);
 
@@ -287,11 +293,11 @@ int main()
 {
     InitWindow(WIDTH, HEIGHT, "Stickman Ragdoll");
     SetTargetFPS(60);
-    camera.offset = { WIDTH / 2.0f, HEIGHT / 2.0f };
+    camera.offset = {WIDTH / 2.0f, HEIGHT / 2.0f};
     camera.rotation = 0.0f;
     camera.zoom = 1.0f;
 
-    Vector2 target = { WIDTH / 2.0f, HEIGHT / 2.0f };
+    Vector2 target = {WIDTH / 2.0f, HEIGHT / 2.0f};
 
     Renderer renderer(SCALE);
 
@@ -300,7 +306,7 @@ int main()
     dPrint("Ground position: (%.2f, %.2f)\n", grounddef.position.x, grounddef.position.y);
     ground = world.CreateBody(&grounddef);
     b2PolygonShape boxshape;
-    boxshape.SetAsBox((WIDTH / SCALE / 2.0f)+10, 0.5f);
+    boxshape.SetAsBox((WIDTH / SCALE / 2.0f) + 10, 0.5f);
     b2FixtureDef groundFD;
     groundFD.shape = &boxshape;
     groundFD.density = 1.0f;
@@ -313,45 +319,62 @@ int main()
     bool physicsPaused = false;
     while (!WindowShouldClose())
     {
-        if (IsKeyDown(KEY_D)) target.x += 200 * GetFrameTime();
-        if (IsKeyDown(KEY_A)) target.x -= 200 * GetFrameTime();
-        if (IsKeyDown(KEY_S)) target.y += 200 * GetFrameTime();
-        if (IsKeyDown(KEY_W)) target.y -= 200 * GetFrameTime();
+        if (IsKeyPressed(KEY_F1))
+            DEBUG = !DEBUG;
 
-        //zoom
+        if (IsKeyDown(KEY_D))
+            target.x += 200 * GetFrameTime();
+        if (IsKeyDown(KEY_A))
+            target.x -= 200 * GetFrameTime();
+        if (IsKeyDown(KEY_S))
+            target.y += 200 * GetFrameTime();
+        if (IsKeyDown(KEY_W))
+            target.y -= 200 * GetFrameTime();
+
+        // zoom
         float zoomSpeed = 1.0f; // zoom units per second
         float dt = GetFrameTime();
 
-        if (IsKeyDown(KEY_Q)) camera.zoom += zoomSpeed * dt * camera.zoom;
-        if (IsKeyDown(KEY_E)) camera.zoom -= zoomSpeed * dt * camera.zoom;
-        if (camera.zoom > 5.0f) camera.zoom = 5.0f; // max zoom in
-        if (camera.zoom < 0.1f) camera.zoom = 0.1f; // max zoom out
-
+        if (IsKeyDown(KEY_Q))
+            camera.zoom += zoomSpeed * dt * camera.zoom;
+        if (IsKeyDown(KEY_E))
+            camera.zoom -= zoomSpeed * dt * camera.zoom;
+        if (camera.zoom > 5.0f)
+            camera.zoom = 5.0f; // max zoom in
+        if (camera.zoom < 0.1f)
+            camera.zoom = 0.1f; // max zoom out
 
         camera.target = target;
 
         mousePos = GetMousePosition();
-        if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) OnMouseDown();
-        if (IsMouseButtonDown(MOUSE_LEFT_BUTTON)) OnMouseMove();
-        if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) OnMouseUp();
+        if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+            OnMouseDown();
+        if (IsMouseButtonDown(MOUSE_LEFT_BUTTON))
+            OnMouseMove();
+        if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON))
+            OnMouseUp();
 
-        if (IsKeyPressed(KEY_P)) physicsPaused = !physicsPaused; // toggle pause
-        if (!physicsPaused) world.Step(1.0f / 60.0f, 8, 3);
+        if (IsKeyPressed(KEY_P))
+            physicsPaused = !physicsPaused; // toggle pause
+        if (!physicsPaused)
+            world.Step(1.0f / 60.0f, 8, 3);
         BeginDrawing();
         BeginMode2D(camera);
-            ClearBackground(BLACK);
-            #if DEBUG
-            for (int i = 0; i <= WIDTH / SCALE; i++) {
+        ClearBackground(BLACK);
+        if (DEBUG){
+            for (int i = 0; i <= WIDTH / SCALE; i++)
+            {
                 Color c = (i == 0) ? RED : DARKGRAY;
-                DrawLineV({i * SCALE+1, 0}, {i * SCALE, HEIGHT}, c);
+                DrawLineV({i * SCALE + 1, 0}, {i * SCALE, HEIGHT}, c);
             }
-            for (int j = 0; j <= HEIGHT / SCALE; j++) {
+            for (int j = 0; j <= HEIGHT / SCALE; j++)
+            {
                 Color c = (j == 0) ? BLUE : DARKGRAY;
                 DrawLineV({0, j * SCALE}, {WIDTH, j * SCALE}, c);
             }
-            #endif
-            renderer.Draw(&world);
-            EndMode2D();
+        }
+        renderer.Draw(&world);
+        EndMode2D();
         MousePosDebug();
         EndDrawing();
     }
@@ -362,6 +385,7 @@ int main()
 void OnMouseDown()
 {
     mouseWorld = screen2worldb2(mousePos);
+    dPrint("Mouse World pos: (%.2f, %.2f)\n", mouseWorld.x, mouseWorld.y);
 
     // AABB query around mouse to find body
     b2AABB aabb;
