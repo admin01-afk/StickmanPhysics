@@ -54,7 +54,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/home/mehmet/colcon_ws/install/savasan_general/bin/uname"
@@ -116,7 +115,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
@@ -180,7 +178,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/home/mehmet/colcon_ws/install/savasan_general/bin/gmake"
@@ -242,7 +239,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -304,7 +300,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/home/mehmet/colcon_ws/install/savasan_general/bin/cc"
@@ -358,7 +353,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -416,7 +410,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
@@ -476,7 +469,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/ar"
@@ -520,7 +512,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -558,7 +549,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/ranlib"
@@ -602,7 +592,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -640,7 +629,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/strip"
@@ -684,7 +672,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -722,7 +709,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/ld"
@@ -766,7 +752,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -804,7 +789,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/nm"
@@ -848,7 +832,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -886,7 +869,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/objdump"
@@ -930,7 +912,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -968,7 +949,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/objcopy"
@@ -1012,7 +992,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1050,7 +1029,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/readelf"
@@ -1094,7 +1072,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1132,7 +1109,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/dlltool"
@@ -1151,7 +1127,6 @@ events:
       - "/usr/local/games/dlltool"
       - "/snap/bin/dlltool"
       - "/home/mehmet/.dotnet/tools/dlltool"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/dlltool"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
     found: false
     search_context:
@@ -1185,7 +1160,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1223,7 +1197,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/addr2line"
@@ -1267,7 +1240,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1305,7 +1277,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/tapi"
@@ -1324,7 +1295,6 @@ events:
       - "/usr/local/games/tapi"
       - "/snap/bin/tapi"
       - "/home/mehmet/.dotnet/tools/tapi"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/tapi"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
     found: false
     search_context:
@@ -1358,7 +1328,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1399,7 +1368,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/gcc-ar-11.4"
@@ -1418,7 +1386,6 @@ events:
       - "/usr/local/games/gcc-ar-11.4"
       - "/snap/bin/gcc-ar-11.4"
       - "/home/mehmet/.dotnet/tools/gcc-ar-11.4"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/gcc-ar-11.4"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-11.4"
       - "/usr/lib/ccache/gcc-ar-11"
       - "/usr/local/cuda-12.1/bin/gcc-ar-11"
@@ -1461,7 +1428,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1502,7 +1468,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/gcc-ranlib-11.4"
@@ -1521,7 +1486,6 @@ events:
       - "/usr/local/games/gcc-ranlib-11.4"
       - "/snap/bin/gcc-ranlib-11.4"
       - "/home/mehmet/.dotnet/tools/gcc-ranlib-11.4"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/gcc-ranlib-11.4"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-11.4"
       - "/usr/lib/ccache/gcc-ranlib-11"
       - "/usr/local/cuda-12.1/bin/gcc-ranlib-11"
@@ -1564,7 +1528,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1628,7 +1591,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1686,7 +1648,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
@@ -1749,7 +1710,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/gcc-ar-11.4"
@@ -1768,7 +1728,6 @@ events:
       - "/usr/local/games/gcc-ar-11.4"
       - "/snap/bin/gcc-ar-11.4"
       - "/home/mehmet/.dotnet/tools/gcc-ar-11.4"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/gcc-ar-11.4"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-11.4"
       - "/usr/lib/ccache/gcc-ar-11"
       - "/usr/local/cuda-12.1/bin/gcc-ar-11"
@@ -1811,7 +1770,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
@@ -1852,7 +1810,6 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/mehmet/.dotnet/tools/"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/lib/ccache/gcc-ranlib-11.4"
@@ -1871,7 +1828,6 @@ events:
       - "/usr/local/games/gcc-ranlib-11.4"
       - "/snap/bin/gcc-ranlib-11.4"
       - "/home/mehmet/.dotnet/tools/gcc-ranlib-11.4"
-      - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts/gcc-ranlib-11.4"
       - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-11.4"
       - "/usr/lib/ccache/gcc-ranlib-11"
       - "/usr/local/cuda-12.1/bin/gcc-ranlib-11"
@@ -1914,7 +1870,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "try_compile-v1"
@@ -1925,8 +1880,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-gVWlrc"
-      binary: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-gVWlrc"
+      source: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-eFMy8x"
+      binary: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-eFMy8x"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1935,13 +1890,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-gVWlrc'
+        Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-eFMy8x'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3938/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a3938.dir/build.make CMakeFiles/cmTC_a3938.dir/build
-        gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-gVWlrc'
-        Building C object CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o
-        /usr/lib/ccache/cc   -v -o CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fe873/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fe873.dir/build.make CMakeFiles/cmTC_fe873.dir/build
+        gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-eFMy8x'
+        Building C object CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o
+        /usr/lib/ccache/cc   -v -o CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.1/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1978,8 +1933,8 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_48382.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_48382.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_a3938
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3938.dir/link.txt --verbose=1
+        Linking C executable cmTC_fe873
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe873.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -1992,14 +1947,14 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3938' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a3938.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf6qdw4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a3938 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe873' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fe873.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGBPg8N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fe873 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         collect2 version 11.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf6qdw4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a3938 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGBPg8N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fe873 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.38
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3938' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a3938.'
-        /usr/lib/ccache/cc  -v -Wl,-v CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o -o cmTC_a3938
-        gmake[1]: Leaving directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-gVWlrc'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe873' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fe873.'
+        /usr/lib/ccache/cc  -v -Wl,-v CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o -o cmTC_fe873
+        gmake[1]: Leaving directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-eFMy8x'
         
       exitCode: 0
   -
@@ -2034,13 +1989,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-gVWlrc']
+        ignore line: [Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-eFMy8x']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3938/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a3938.dir/build.make CMakeFiles/cmTC_a3938.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-gVWlrc']
-        ignore line: [Building C object CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/lib/ccache/cc   -v -o CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fe873/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_fe873.dir/build.make CMakeFiles/cmTC_fe873.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-eFMy8x']
+        ignore line: [Building C object CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/lib/ccache/cc   -v -o CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -2077,8 +2032,8 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_48382.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_48382.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_a3938]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3938.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_fe873]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe873.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -2091,13 +2046,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3938' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a3938.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf6qdw4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a3938 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe873' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fe873.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGBPg8N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fe873 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccf6qdw4.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccGBPg8N.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -2115,7 +2070,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a3938] ==> ignore
+          arg [cmTC_fe873] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -2128,7 +2083,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -2143,7 +2098,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 11.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf6qdw4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a3938 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_a3938.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGBPg8N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fe873 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_fe873.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -2181,8 +2136,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-spqd56"
-      binary: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-spqd56"
+      source: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-o4rQTF"
+      binary: "/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-o4rQTF"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2192,13 +2147,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-spqd56'
+        Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-o4rQTF'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bba12/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_bba12.dir/build.make CMakeFiles/cmTC_bba12.dir/build
-        gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-spqd56'
-        Building CXX object CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/lib/ccache/c++   -v -o CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d1d7c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d1d7c.dir/build.make CMakeFiles/cmTC_d1d7c.dir/build
+        gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-o4rQTF'
+        Building CXX object CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/lib/ccache/c++   -v -o CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -2239,8 +2194,8 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3ff04.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ff04.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_bba12
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bba12.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_d1d7c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1d7c.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -2253,14 +2208,14 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bba12' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bba12.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrRXbc3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bba12 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d1d7c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d1d7c.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH6qFGc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d1d7c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         collect2 version 11.4.0
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrRXbc3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bba12 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH6qFGc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d1d7c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.38
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bba12' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bba12.'
-        /usr/lib/ccache/c++  -v -Wl,-v CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bba12
-        gmake[1]: Leaving directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-spqd56'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d1d7c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d1d7c.'
+        /usr/lib/ccache/c++  -v -Wl,-v CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d1d7c
+        gmake[1]: Leaving directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-o4rQTF'
         
       exitCode: 0
   -
@@ -2301,13 +2256,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-spqd56']
+        ignore line: [Change Dir: '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-o4rQTF']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bba12/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_bba12.dir/build.make CMakeFiles/cmTC_bba12.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-spqd56']
-        ignore line: [Building CXX object CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/lib/ccache/c++   -v -o CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d1d7c/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d1d7c.dir/build.make CMakeFiles/cmTC_d1d7c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/mehmet/c++/StickmanPhysics/build/CMakeFiles/CMakeScratch/TryCompile-o4rQTF']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/lib/ccache/c++   -v -o CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -2348,8 +2303,8 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3ff04.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ff04.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_bba12]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bba12.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_d1d7c]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1d7c.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -2362,13 +2317,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bba12' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bba12.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrRXbc3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bba12 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d1d7c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d1d7c.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH6qFGc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d1d7c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccrRXbc3.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccH6qFGc.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -2386,7 +2341,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_bba12] ==> ignore
+          arg [cmTC_d1d7c] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -2399,7 +2354,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -2410,7 +2365,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 11.4.0]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrRXbc3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bba12 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_bba12.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH6qFGc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d1d7c /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_d1d7c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -2633,7 +2588,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
@@ -2843,7 +2797,6 @@ events:
         - "/snap/bin"
         - "/snap/bin"
         - "/home/mehmet/.dotnet/tools"
-        - "/home/mehmet/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts"
         - "/home/mehmet/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:

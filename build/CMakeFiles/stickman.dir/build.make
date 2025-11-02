@@ -72,10 +72,24 @@ include CMakeFiles/stickman.dir/flags.make
 CMakeFiles/stickman.dir/codegen:
 .PHONY : CMakeFiles/stickman.dir/codegen
 
+CMakeFiles/stickman.dir/src/input.cpp.o: CMakeFiles/stickman.dir/flags.make
+CMakeFiles/stickman.dir/src/input.cpp.o: /home/mehmet/c++/StickmanPhysics/src/input.cpp
+CMakeFiles/stickman.dir/src/input.cpp.o: CMakeFiles/stickman.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stickman.dir/src/input.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stickman.dir/src/input.cpp.o -MF CMakeFiles/stickman.dir/src/input.cpp.o.d -o CMakeFiles/stickman.dir/src/input.cpp.o -c /home/mehmet/c++/StickmanPhysics/src/input.cpp
+
+CMakeFiles/stickman.dir/src/input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stickman.dir/src/input.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mehmet/c++/StickmanPhysics/src/input.cpp > CMakeFiles/stickman.dir/src/input.cpp.i
+
+CMakeFiles/stickman.dir/src/input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stickman.dir/src/input.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mehmet/c++/StickmanPhysics/src/input.cpp -o CMakeFiles/stickman.dir/src/input.cpp.s
+
 CMakeFiles/stickman.dir/src/main.cpp.o: CMakeFiles/stickman.dir/flags.make
 CMakeFiles/stickman.dir/src/main.cpp.o: /home/mehmet/c++/StickmanPhysics/src/main.cpp
 CMakeFiles/stickman.dir/src/main.cpp.o: CMakeFiles/stickman.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stickman.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/stickman.dir/src/main.cpp.o"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stickman.dir/src/main.cpp.o -MF CMakeFiles/stickman.dir/src/main.cpp.o.d -o CMakeFiles/stickman.dir/src/main.cpp.o -c /home/mehmet/c++/StickmanPhysics/src/main.cpp
 
 CMakeFiles/stickman.dir/src/main.cpp.i: cmake_force
@@ -86,18 +100,52 @@ CMakeFiles/stickman.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stickman.dir/src/main.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mehmet/c++/StickmanPhysics/src/main.cpp -o CMakeFiles/stickman.dir/src/main.cpp.s
 
+CMakeFiles/stickman.dir/src/physics.cpp.o: CMakeFiles/stickman.dir/flags.make
+CMakeFiles/stickman.dir/src/physics.cpp.o: /home/mehmet/c++/StickmanPhysics/src/physics.cpp
+CMakeFiles/stickman.dir/src/physics.cpp.o: CMakeFiles/stickman.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/stickman.dir/src/physics.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stickman.dir/src/physics.cpp.o -MF CMakeFiles/stickman.dir/src/physics.cpp.o.d -o CMakeFiles/stickman.dir/src/physics.cpp.o -c /home/mehmet/c++/StickmanPhysics/src/physics.cpp
+
+CMakeFiles/stickman.dir/src/physics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stickman.dir/src/physics.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mehmet/c++/StickmanPhysics/src/physics.cpp > CMakeFiles/stickman.dir/src/physics.cpp.i
+
+CMakeFiles/stickman.dir/src/physics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stickman.dir/src/physics.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mehmet/c++/StickmanPhysics/src/physics.cpp -o CMakeFiles/stickman.dir/src/physics.cpp.s
+
+CMakeFiles/stickman.dir/src/render.cpp.o: CMakeFiles/stickman.dir/flags.make
+CMakeFiles/stickman.dir/src/render.cpp.o: /home/mehmet/c++/StickmanPhysics/src/render.cpp
+CMakeFiles/stickman.dir/src/render.cpp.o: CMakeFiles/stickman.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/stickman.dir/src/render.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stickman.dir/src/render.cpp.o -MF CMakeFiles/stickman.dir/src/render.cpp.o.d -o CMakeFiles/stickman.dir/src/render.cpp.o -c /home/mehmet/c++/StickmanPhysics/src/render.cpp
+
+CMakeFiles/stickman.dir/src/render.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stickman.dir/src/render.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mehmet/c++/StickmanPhysics/src/render.cpp > CMakeFiles/stickman.dir/src/render.cpp.i
+
+CMakeFiles/stickman.dir/src/render.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stickman.dir/src/render.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mehmet/c++/StickmanPhysics/src/render.cpp -o CMakeFiles/stickman.dir/src/render.cpp.s
+
 # Object files for target stickman
 stickman_OBJECTS = \
-"CMakeFiles/stickman.dir/src/main.cpp.o"
+"CMakeFiles/stickman.dir/src/input.cpp.o" \
+"CMakeFiles/stickman.dir/src/main.cpp.o" \
+"CMakeFiles/stickman.dir/src/physics.cpp.o" \
+"CMakeFiles/stickman.dir/src/render.cpp.o"
 
 # External object files for target stickman
 stickman_EXTERNAL_OBJECTS =
 
+stickman: CMakeFiles/stickman.dir/src/input.cpp.o
 stickman: CMakeFiles/stickman.dir/src/main.cpp.o
+stickman: CMakeFiles/stickman.dir/src/physics.cpp.o
+stickman: CMakeFiles/stickman.dir/src/render.cpp.o
 stickman: CMakeFiles/stickman.dir/build.make
 stickman: /usr/local/lib/libraylib.so.5.5.0
 stickman: CMakeFiles/stickman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable stickman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable stickman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stickman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

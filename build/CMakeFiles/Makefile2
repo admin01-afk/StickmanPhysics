@@ -85,12 +85,12 @@ clean: CMakeFiles/stickman.dir/clean
 CMakeFiles/stickman.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stickman.dir/build.make CMakeFiles/stickman.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stickman.dir/build.make CMakeFiles/stickman.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=1,2 "Built target stickman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target stickman"
 .PHONY : CMakeFiles/stickman.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stickman.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmet/c++/StickmanPhysics/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmet/c++/StickmanPhysics/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stickman.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmet/c++/StickmanPhysics/build/CMakeFiles 0
 .PHONY : CMakeFiles/stickman.dir/rule
@@ -102,7 +102,7 @@ stickman: CMakeFiles/stickman.dir/rule
 # codegen rule for target.
 CMakeFiles/stickman.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stickman.dir/build.make CMakeFiles/stickman.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=1,2 "Finished codegen for target stickman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mehmet/c++/StickmanPhysics/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target stickman"
 .PHONY : CMakeFiles/stickman.dir/codegen
 
 # clean rule for target.
