@@ -1,12 +1,15 @@
 #include "render.h"
 #include <cstdio>
+#include "EventBus.h"
+#include "Events.h"
+#include <vector>
 
 Renderer::Renderer(b2World *world, SharedData* sharedData) : world(world), sharedData(sharedData) {
-    InitWindow(WIDTH, HEIGHT, "Window");
+    InitWindow(sharedData->WIDTH, sharedData->HEIGHT, "Window");
     SetTargetFPS(60);
     camera = {0};
-    camera.target = cam_target;
-    camera.offset = {WIDTH / 2.0f, HEIGHT / 2.0f};
+    camera.target = {sharedData->WIDTH / 2.0f, sharedData->HEIGHT / 2.0f};
+    camera.offset = {sharedData->WIDTH / 2.0f, sharedData->HEIGHT / 2.0f};
     camera.rotation = 0.0f;
     camera.zoom = 1.0f;
 
@@ -28,11 +31,6 @@ Renderer::Renderer(b2World *world, SharedData* sharedData) : world(world), share
     EventBus::Subscribe<OnMouseDownEvent>([this](const OnMouseDownEvent&) { OnMouseDown(); });
     EventBus::Subscribe<OnMouseMoveEvent>([this](const OnMouseMoveEvent& ) { OnMouseMove(); });
     EventBus::Subscribe<OnMouseUpEvent>([this](const OnMouseUpEvent&) { OnMouseUp(); });
-
-    while (!WindowShouldClose())
-    {
-        Render();
-    }
 }
 
 void Renderer::Render()
@@ -121,6 +119,11 @@ void Renderer::Draw(b2World *world)
     }
 }
 
+void Renderer::UpdateCameraTargetPos()
+{
+    camera.target = sharedData->camTargetPos;
+}
+
 void Renderer::MousePosDebug()
 {
     if(!DEBUG) return;
@@ -168,15 +171,15 @@ void Renderer::MousePosDebug()
 
 void Renderer::DrawGrid(){
     if (DEBUG){
-        for (int i = 0; i <= WIDTH / SCALE; i++)
+        for (int i = 0; i <= sharedData->WIDTH / SCALE; i++)
         {
             Color c = (i == 0) ? RED : DARKGRAY;
-            DrawLineV({i * SCALE + 1.0f, 0.0f}, {i * SCALE, (float)HEIGHT}, c);
+            DrawLineV({i * SCALE + 1.0f, 0.0f}, {i * SCALE, (float)sharedData->HEIGHT}, c);
         }
-        for (int j = 0; j <= HEIGHT / SCALE; j++)
+        for (int j = 0; j <= sharedData->HEIGHT / SCALE; j++)
         {
             Color c = (j == 0) ? BLUE : DARKGRAY;
-            DrawLineV({0.0f, j * SCALE}, {(float)WIDTH, j * SCALE}, c);
+            DrawLineV({0.0f, j * SCALE}, {(float)sharedData->WIDTH, j * SCALE}, c);
         }
     }
 }

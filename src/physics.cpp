@@ -96,13 +96,13 @@ Physics::Ragdoll Physics::CreateStickman(b2Vec2 pos)
     return ragdoll;
 }
 
-void Physics::createGround(){
+void Physics::createGround(float x, float y){
     b2BodyDef groundDef;
-    groundDef.position.Set(0.0f, -10.0f);
+    groundDef.position.Set(x, y);
     b2Body* ground = world->CreateBody(&groundDef);
 
     b2PolygonShape groundShape;
-    groundShape.SetAsBox(8.0f, 0.5f);
+    groundShape.SetAsBox(2.0f * x, 0.5f);
     b2FixtureDef groundFD;
     groundFD.shape = &groundShape;
     groundFD.filter.categoryBits = CATEGORY_GROUND;

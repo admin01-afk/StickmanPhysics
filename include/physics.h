@@ -13,7 +13,6 @@ public:
         b2Vec2 gravity(0.0f, -10.0f);
         world = new b2World(gravity);
         sharedData->world = world;
-        createGround();
 
         EventBus::Subscribe<PausePhysicsEvent>([this](const PausePhysicsEvent& e) {
             isPhysicsPaused = e.isPaused;
@@ -37,7 +36,7 @@ public:
     
     Ragdoll CreateStickman(b2Vec2 pos);
     void updatePhysics();
-    void createGround(); // consider ground pos based on window size
+    void createGround(float x, float y); // consider ground pos based on window size
 
 private:
     b2World* world;

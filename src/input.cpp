@@ -1,6 +1,11 @@
 #include "input.h"
+#include "EventBus.h"
+#include "Events.h"
+#include "raylib.h"
 
-// input processing logic
+/*
+    input processing logic
+*/ 
 void InputHandler::ProcessInput() {
     float dt = GetFrameTime();
 
@@ -11,12 +16,10 @@ void InputHandler::ProcessInput() {
     if (IsKeyPressed(KEY_F3)) EventBus::Emit(ToggleDebugEvent{});
     
     // Move camera target
-    Vector2 target = {0, 0};
-    if (IsKeyDown(KEY_D)) target.x += 200 * dt;
-    if (IsKeyDown(KEY_A)) target.x -= 200 * dt;
-    if (IsKeyDown(KEY_S)) target.y += 200 * dt;
-    if (IsKeyDown(KEY_W)) target.y -= 200 * dt;
-    if (target.x != 0 || target.y != 0) EventBus::Emit(setCameraTargetEvent{target});
+    if (IsKeyDown(KEY_D)) sharedData->camTargetPos.x += 200 * dt;
+    if (IsKeyDown(KEY_A)) sharedData->camTargetPos.x -= 200 * dt;
+    if (IsKeyDown(KEY_S)) sharedData->camTargetPos.y += 200 * dt;
+    if (IsKeyDown(KEY_W)) sharedData->camTargetPos.y -= 200 * dt;
 
     //zoom
     float zoom = 0.0f;

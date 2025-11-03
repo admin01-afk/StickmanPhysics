@@ -6,6 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/stickman",
+            "cwd": "${workspaceFolder}/build",
             "MIMode": "gdb",
             "setupCommands": [
                 {

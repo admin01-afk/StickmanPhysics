@@ -4,7 +4,7 @@
         {
             "label": "build stickman",
             "type": "shell",
-            "command": "cmake .. && make",
+            "command": "rm -rf ${workspaceFolder}/build/* && cmake .. && make",
             "options": {
                 "cwd": "${workspaceFolder}/build"
             },

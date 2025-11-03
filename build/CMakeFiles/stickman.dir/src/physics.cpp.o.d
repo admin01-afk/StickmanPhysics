@@ -1,5 +1,6 @@
-CMakeFiles/stickman.dir/src/main.cpp.o: \
- /home/mehmet/c++/StickmanPhysics/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/stickman.dir/src/physics.cpp.o: \
+ /home/mehmet/c++/StickmanPhysics/src/physics.cpp \
+ /usr/include/stdc-predef.h \
  /home/mehmet/c++/StickmanPhysics/include/physics.h \
  /home/mehmet/c++/StickmanPhysics/include/EventBus.h \
  /usr/include/c++/11/functional \
@@ -162,6 +163,4 @@ CMakeFiles/stickman.dir/src/main.cpp.o: \
  /usr/include/box2d/b2_pulley_joint.h \
  /usr/include/box2d/b2_revolute_joint.h \
  /usr/include/box2d/b2_weld_joint.h /usr/include/box2d/b2_wheel_joint.h \
- /home/mehmet/c++/StickmanPhysics/include/SharedData.h \
- /home/mehmet/c++/StickmanPhysics/include/input.h \
- /home/mehmet/c++/StickmanPhysics/include/render.h
+ /home/mehmet/c++/StickmanPhysics/include/SharedData.h

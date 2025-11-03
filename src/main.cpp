@@ -2,7 +2,6 @@
 #include "input.h"
 #include "render.h"
 #include "SharedData.h"
-#include "box2d/box2d.h"
 
 int main() {
     SharedData sharedData;
@@ -10,12 +9,13 @@ int main() {
     InputHandler inputHandler(&sharedData);
     Renderer renderer(sharedData.world, &sharedData);
 
-    physics.createGround();
-    physics.CreateStickman({10.0f, 5.0f});
+    physics.createGround(sharedData.WIDTH / (2.0f * renderer.SCALE), -sharedData.HEIGHT / renderer.SCALE);
+    physics.CreateStickman({sharedData.WIDTH / (2.0f * renderer.SCALE), -sharedData.HEIGHT / renderer.SCALE + 5.0f});
 
     while (!WindowShouldClose()) {
         inputHandler.ProcessInput();
         physics.updatePhysics();
+        renderer.UpdateCameraTargetPos();
         renderer.Render();
     }
     CloseWindow();

@@ -1,28 +1,21 @@
 #pragma once
-#include "EventBus.h"
-#include "Events.h"
 #include "SharedData.h"
 
 #include "raylib.h"
 #include <box2d/box2d.h>
-#include <vector>
-#include <iostream>
 
 
 /*  b2World *world  */
 class Renderer {
 public:
     bool DEBUG = true;
-    const int WIDTH = 1200;
-    const int HEIGHT = 900;
     const float SCALE = 50.0f; // meters to pixels
     Camera2D camera;
-    Vector2 cam_target = {WIDTH / 2.0f, HEIGHT / 2.0f};
     b2MouseJoint *mouseJoint = nullptr;
 
     Renderer(b2World *world, SharedData* sharedData);
+    void UpdateCameraTargetPos();
     void Render();
-    ~Renderer() {CloseWindow();}
 private:
     b2World *world;
     SharedData* sharedData;
@@ -53,5 +46,5 @@ private:
     {
         return Vector2{worldPos.x * SCALE, -worldPos.y * SCALE};
     }
-#pragma endregion
+    #pragma endregion
 };
