@@ -1,6 +1,6 @@
 #include "physics.h"
 
-Physics::Ragdoll Physics::CreateStickman(b2Vec2 pos)
+Ragdoll Physics::CreateStickman(b2Vec2 pos)
 {
     Ragdoll ragdoll;
 
@@ -96,10 +96,11 @@ Physics::Ragdoll Physics::CreateStickman(b2Vec2 pos)
     return ragdoll;
 }
 
-void Physics::createGround(float x, float y){
+void Physics::createGround(float x, float y)
+{
     b2BodyDef groundDef;
     groundDef.position.Set(x, y);
-    b2Body* ground = world->CreateBody(&groundDef);
+    b2Body *ground = world->CreateBody(&groundDef);
 
     b2PolygonShape groundShape;
     groundShape.SetAsBox(2.0f * x, 0.5f);
@@ -110,6 +111,8 @@ void Physics::createGround(float x, float y){
     ground->CreateFixture(&groundFD);
 }
 
-void Physics::updatePhysics(){
-    if(!isPhysicsPaused) world->Step(1.0f / 60.0f, 8, 3);
+void Physics::updatePhysics()
+{
+    if (!isPhysicsPaused)
+        world->Step(1.0f / 60.0f, 8, 3);
 }

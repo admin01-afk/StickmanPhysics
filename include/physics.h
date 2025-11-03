@@ -6,6 +6,10 @@
 
 #include <vector>
 
+struct Ragdoll {
+    std::vector<b2Body*> limbs;
+};
+
 class Physics {
 public:
     Physics(SharedData* sharedData) : sharedData(sharedData) {
@@ -28,10 +32,6 @@ public:
         CATEGORY_FRONT = 0x0002,
         CATEGORY_BACK = 0x0004,
         CATEGORY_GROUND = 0x0008
-    };
-
-    struct Ragdoll {
-        std::vector<b2Body*> limbs;
     };
     
     Ragdoll CreateStickman(b2Vec2 pos);

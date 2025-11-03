@@ -5,7 +5,7 @@
 #include <vector>
 
 Renderer::Renderer(b2World *world, SharedData* sharedData) : world(world), sharedData(sharedData) {
-    InitWindow(sharedData->WIDTH, sharedData->HEIGHT, "Window");
+    InitWindow(sharedData->WIDTH, sharedData->HEIGHT, "Stickman Physics");
     SetTargetFPS(60);
     camera = {0};
     camera.target = {sharedData->WIDTH / 2.0f, sharedData->HEIGHT / 2.0f};
@@ -129,7 +129,7 @@ void Renderer::MousePosDebug()
     if(!DEBUG) return;
 
     // Get current mouse in both screen and world coords
-    Vector2 mousePos = GetMousePosition();
+    Vector2 mousePos = sharedData->mousePos;
     Vector2 worldPos = screen2world(mousePos);
 
     const int fontSize = 18;
